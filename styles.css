@@ -73,7 +73,7 @@ h1 {
 }
 
 .weather-input .separator::before {
-    content: "ou";
+    content: "or";
     color: #34424d;
     font-size: 1.18rem;
     padding: 0 15px;
