@@ -7,9 +7,10 @@ const weatherCardsDiv = document.querySelector(".weather-cards");
 const API_KEY = "9f2e1f455e003246d00a9c41b725bbc8";
 
 const createWeatherCard = async (cityName, weatherItem, index) => {
+    
     if (index === 0) {
         return `<div class="details">
-                    <h2>${cityName} - (${date(weatherItem.dt_txt.split(" ")[0])})</h2>
+                    <h2>${cityName} (${date(weatherItem.dt_txt.split(" ")[0])})</h2>
                     <h6>Temperatura: ${(weatherItem.main.temp - 273.15).toFixed(2)}°C</h6>
                     <h6>Vento: ${weatherItem.wind.speed} M/S</h6>
                     <h6>Umidade: ${weatherItem.main.humidity}%</h6>
